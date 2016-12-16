@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.three.webFunction</groupId>
+  <artifactId>three-web</artifactId>
+  <packaging>war</packaging>
+  <name>three-web</name>  
+  <parent>
+    <groupId>com.three.threeFunction</groupId>
+    <artifactId>three-parent</artifactId>
+    <version>1.0</version>
+  </parent>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <!-- 如果对于要直接被访问的模块直接命名为war包，对于依赖的直接达成jar包 -->
+  
+  <!-- <url>http://maven.apache.org</url>  -->
+  <dependencies>
+  		<!-- 引入cor模块的jar包 -->
+  		<dependency>
+			<groupId>com.three.coreFunction</groupId>
+    		<artifactId>three-core</artifactId>
+    		<version>${three-version}</version>
+    	</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty.aggregate</groupId>
+			<artifactId>jetty-all-server</artifactId>
+			<version>7.0.2.v20100331</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+</project>

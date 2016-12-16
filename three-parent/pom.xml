@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.three.threeFunction</groupId>
+  <artifactId>three-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <name>three-parent</name>  
+  <url>http://maven.apache.org</url> 
+  <modules>
+  	<!-- 这个就是整个项目的web层了，页面的显示以及控制层 -->
+  	<module>three-web</module>
+  	<!-- 核心业务项目。主要是Service处理业务逻辑 -->
+  	<module>three-core</module>
+  	<!-- 数据模型，与数据库表字段对应的实体类 -->
+  	<module>three-model</module>
+  	<!-- 数据持久层，操作低层数据库-->
+  	<module>three-db</module>
+  	<!-- 工具类，所有工具类都提取出来写在这个项目中 -->
+    <module>three-utils</module>
+  </modules>
+  <!-- 创建者信息-->
+  <developers>
+    <developer>
+      <id>three</id>
+      <name>Caidl Lishsh Yufeng</name>
+      <email>1595252552@qq.com</email>
+      <url>http://my.oschina.net/u/2448718</url>
+      <organization>threeGo</organization>
+      <organizationUrl>https://github.com/ThreePeopleGo</organizationUrl>
+    </developer>
+  </developers>
+  
+  <!--  <repositories>
+		<repository>
+			 <id>CN</id>
+		     <name>OSChina Central</name>                                                                                                                       
+		     <url>http://maven.oschina.net/content/groups/public/</url>
+			 </repository>
+		<repository>
+			<id>nexus-osc-thirdparty</id>
+			<name>Nexus osc thirdparty</name>
+			<url>http://maven.oschina.net/content/repositories/thirdparty/</url>
+		</repository>
+		
+		<repository>
+			<id>mvnrepository</id>
+			<name>mvnrepository</name>
+			<url>http://mvnrepository.com</url>
+		</repository>
+		<repository>
+			<id>jboss-cache</id>
+			<name>jboss-cache</name>
+			<url>http://repository.jboss.org/maven2</url>
+		</repository>
+		<repository>
+			<id>mvnsearch</id>
+			<name>mvnsearch Maven Repository</name>
+			<url>http://www.mvnsearch.org/maven2</url>
+		</repository>
+	</repositories> -->
+	
+  <build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin
+				</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin
+				</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<!-- 更改maven默认的打包目录 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF8</encoding>
+<!-- 					<webappDirectory>${basedir}/src/main/webapp</webappDirectory> -->
+<!-- 					<warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory> -->
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+					<testFailureIgnore>true</testFailureIgnore>
+					<includes>
+						<include>**/*Test.java</include>
+						<include>**/*TestCase.java</include>
+						<include>**/Test*.java</include>
+					</includes>
+					<excludes>
+						<exclude>**/Abstract*.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+	</build>
+	
+	 <dependencies>
+	  	<!-- servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<!-- common lang -->
+		<dependency>
+			  <groupId>commons-lang</groupId>
+			  <artifactId>commons-lang</artifactId>
+			  <version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<!-- spring-bean -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<!-- spring-core-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<!-- spring-webmvc-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<!-- velocity -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<!-- velocity-tools -->
+		<dependency>
+			<groupId>velocity-tools</groupId>
+			<artifactId>velocity-tools-view</artifactId>
+			<version>2.0-beta1</version>
+		</dependency>
+		<!-- commons-collections-->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.springframework</groupId>
+		  <artifactId>spring-orm</artifactId>
+		  <version>3.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>aopalliance</groupId>
+			<artifactId>aopalliance</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.6.9</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>3.2.3.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+  </dependencies>
+  
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<three-version>1.0</three-version>
+  </properties>
+</project>
