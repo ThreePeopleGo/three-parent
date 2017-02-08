@@ -3,7 +3,7 @@
  * TODO
  *
  */
-package caideli.service.serviceImpl;
+package com.three.caideli.service.serviceImpl;
 
 import java.util.List;
 import java.util.Map;
@@ -12,10 +12,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.three.caideli.bean.BackUser;
 import com.three.caideli.dao.BackUserDao;
-
-import caideli.bean.BackUser;
-import caideli.service.BackUserService;
+import com.three.caideli.service.BackUserService;
 
 /**
  * @author :caideli

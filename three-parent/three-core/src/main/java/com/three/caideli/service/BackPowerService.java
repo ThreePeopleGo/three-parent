@@ -3,12 +3,12 @@
  * 权限业务层接口
  *
  */
-package caideli.service;
+package com.three.caideli.service;
 
 import java.util.List;
 import java.util.Map;
 
-import caideli.bean.BackPower;
+import com.three.caideli.bean.BackPower;
 
 /**
  * @author :caideli

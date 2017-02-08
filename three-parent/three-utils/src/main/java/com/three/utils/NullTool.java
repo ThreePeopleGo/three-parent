@@ -2,7 +2,7 @@
  * @author :caideli
  * @CreatTime ：2015年9月22日 下午3:00:30 
  */
-package org.three.utils;
+package com.three.utils;
 
 import java.util.Collection;
 import java.util.Map;

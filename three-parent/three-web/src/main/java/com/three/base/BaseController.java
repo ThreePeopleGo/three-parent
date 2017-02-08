@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.servlet.ModelAndView;
 
-import caideli.bean.BackUser;
 
 public class BaseController implements Serializable {
 

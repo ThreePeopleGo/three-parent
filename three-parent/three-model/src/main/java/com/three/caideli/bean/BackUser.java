@@ -3,7 +3,7 @@
  * BackUser.java
  * 2015下午3:03:12
  */
-package caideli.bean;
+package com.three.caideli.bean;
 
 import java.io.Serializable;
 

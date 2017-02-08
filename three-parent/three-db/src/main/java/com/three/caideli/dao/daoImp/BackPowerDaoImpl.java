@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 
 
 
-import com.three.base.BaseDaoImpl;
-import com.three.caideli.dao.BackPowerDao;
 
-import caideli.bean.BackPower;
+import com.three.base.BaseDaoImpl;
+import com.three.caideli.bean.BackPower;
+import com.three.caideli.dao.BackPowerDao;
 
 
 /**

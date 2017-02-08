@@ -1,4 +1,4 @@
-package caideli.bean;
+package com.three.caideli.bean;
 
 
 

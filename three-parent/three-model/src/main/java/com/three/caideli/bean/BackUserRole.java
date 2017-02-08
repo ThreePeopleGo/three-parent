@@ -3,7 +3,7 @@
  * BackUserRole.java
  * 2015下午3:22:52
  */
-package caideli.bean;
+package com.three.caideli.bean;
 
 import java.io.Serializable;
 

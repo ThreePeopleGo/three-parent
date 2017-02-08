@@ -1,7 +1,7 @@
 /**
  * 权限业务层实现类
  */
-package caideli.service.serviceImpl;
+package com.three.caideli.service.serviceImpl;
 
 import java.util.List;
 
@@ -13,12 +13,13 @@ import javax.annotation.Resource;
 
 
 
+
+
 import org.springframework.stereotype.Service;
 
+import com.three.caideli.bean.BackPower;
 import com.three.caideli.dao.BackPowerDao;
-
-import caideli.bean.BackPower;
-import caideli.service.BackPowerService;
+import com.three.caideli.service.BackPowerService;
 
 /**
  * @author caideli

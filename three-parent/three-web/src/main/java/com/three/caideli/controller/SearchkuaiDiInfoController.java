@@ -10,9 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import org.three.utils.LoggerFactary;
 
 import com.three.caideli.annotation.NoLogin;
+import com.three.utils.LoggerFactary;
 @Scope("prototype")
 @Controller("searchkuaiDiInfoController")
 public class SearchkuaiDiInfoController {

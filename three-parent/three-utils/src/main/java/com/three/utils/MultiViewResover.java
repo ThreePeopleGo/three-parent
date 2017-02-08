@@ -1,4 +1,4 @@
-package org.three.utils;
+package com.three.utils;
 
 import java.util.Locale;
 

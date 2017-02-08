@@ -6,7 +6,7 @@
  * @date 2013-8-8 下午02:01:05 
  * @version V1.0   
  */
-package org.three.utils;
+package com.three.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

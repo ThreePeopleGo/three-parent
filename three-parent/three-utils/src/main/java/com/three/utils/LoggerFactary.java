@@ -3,7 +3,7 @@
  * @author lim
  * @version V1.0 
  */
-package org.three.utils;
+package com.three.utils;
 
 import org.apache.log4j.Logger;
 

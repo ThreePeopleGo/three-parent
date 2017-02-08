@@ -2,7 +2,7 @@
  * mario.com Inc.
  * Copyright (c) 2014-2015 All Rights Reserved.
  */
-package org.three.utils;
+package com.three.utils;
 
 import java.io.StringWriter;
 

@@ -7,8 +7,7 @@ package com.three.caideli.dao;
 
 
 import com.three.base.BaseDao;
-
-import caideli.bean.BackUser;
+import com.three.caideli.bean.BackUser;
 
 /**
  * @author :caideli

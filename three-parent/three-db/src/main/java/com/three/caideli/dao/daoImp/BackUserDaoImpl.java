@@ -8,9 +8,8 @@ package com.three.caideli.dao.daoImp;
 import org.springframework.stereotype.Component;
 
 import com.three.base.BaseDaoImpl;
+import com.three.caideli.bean.BackUser;
 import com.three.caideli.dao.BackUserDao;
-
-import caideli.bean.BackUser;
 
 
 /**

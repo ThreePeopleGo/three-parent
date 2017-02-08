@@ -5,9 +5,8 @@
  */
 package com.three.caideli.dao;
 
-import caideli.bean.BackPower;
-
 import com.three.base.BaseDao;
+import com.three.caideli.bean.BackPower;
 
 
 
