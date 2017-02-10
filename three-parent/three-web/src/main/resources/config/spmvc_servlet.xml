@@ -38,7 +38,7 @@
 	    <property name="resourceLoaderPath"> 
 			<value>/WEB-INF/template/myHome/</value> 
 	    </property> 
-	    <property name="configLocation" value="velocity.properties"/>  
+	    <property name="configLocation" value="classpath:velocity.properties"/>  
 	</bean>  
 	<!-- valocity配置解析器 -->
 	<bean id="velocityViewResolver"
@@ -52,7 +52,7 @@
 	</bean>
 
 	<!-- 定义视图解析器 ,可自由扩展，或者自己重写的视图解析，必须实现ViewResolver接口 -->
-	<bean id="viewResolver" class="org.three.utils.MultiViewResover">
+	<bean id="viewResolver" class="com.three.utils.MultiViewResover">
 		<property name="resolvers">
 			<map>
 				<entry key="json">
