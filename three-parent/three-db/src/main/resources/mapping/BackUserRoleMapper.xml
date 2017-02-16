@@ -3,7 +3,7 @@
 <sqlMap namespace="BackUserRole">
 	<!-- 别名 -->
 	<typeAlias alias="BackUserRole"
-		type="caideli.bean.BackUserRole" />
+		type="com.three.caideli.bean.BackUserRole" />
 	<!-- 配置对象映射 -->
 	<resultMap class="BackUserRole" id="BackUserRoleResult">
 		<result property="id" column="id" />

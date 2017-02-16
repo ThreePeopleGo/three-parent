@@ -6,13 +6,13 @@
   <settings lazyLoadingEnabled="true" useStatementNamespaces="true"/>   
 <!-- 这里可以写多个实体的映射文件 -->
 <!-- 权限 -->
-<sqlMap resource="com/three/caideli/mapping/BackPowerMapper.xml" />
+<sqlMap resource="mapping/BackPowerMapper.xml" />
 <!-- 用户 -->
-<sqlMap resource="com/three/caideli/mapping/BackUserMapper.xml" />
+<sqlMap resource="mapping/BackUserMapper.xml" />
 <!-- 角色 -->
-<sqlMap resource="com/three/caideli/mapping/BackRoleMapper.xml" />
+<sqlMap resource="mapping/BackRoleMapper.xml" />
 <!-- 角色权限 -->
-<sqlMap resource="com/three/caideli/mapping/BackRolePowerMapper.xml" />
+<sqlMap resource="mapping/BackRolePowerMapper.xml" />
 <!--用户角色  -->
-<sqlMap resource="com/three/caideli/mapping/BackUserRoleMapper.xml" />
+<sqlMap resource="mapping/BackUserRoleMapper.xml" />
 </sqlMapConfig>

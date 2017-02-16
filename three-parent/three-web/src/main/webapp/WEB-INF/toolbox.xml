@@ -8,11 +8,11 @@
 	<tool>
 		<key>dateUtils</key>
 		<scope>request</scope>
-		<class>caideli.tool.DateUtils</class>
+		<class>com.three.utils.DateUtils</class>
 	</tool>
 	<tool>
 		<key>arithUtils</key>
 		<scope>request</scope>
-		<class>caideli.tool.ArithUtils</class>
+		<class>com.three.utils.ArithUtils</class>
 	</tool>
 </toolbox> 

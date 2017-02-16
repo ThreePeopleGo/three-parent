@@ -2,7 +2,7 @@
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap namespace="BackPower">
 	<!-- 别名 -->
-	<typeAlias alias="BackPower" type="caideli.bean.BackPower" />
+	<typeAlias alias="BackPower" type="com.three.caideli.bean.BackPower" />
 	<!-- 配置对象映射 -->
 	<resultMap class="BackPower" id="BackPowerResult">
 		<result property="id" column="power_id" />

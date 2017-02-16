@@ -2,7 +2,7 @@
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap namespace="BackUser">
 	<!-- 别名 -->
-	<typeAlias alias="BackUser" type="caideli.bean.BackUser" />
+	<typeAlias alias="BackUser" type="com.three.caideli.bean.BackUser" />
 	<!-- 配置对象映射 -->
 	<resultMap class="BackUser" id="BackUserResult">
 		<result property="id" column="id" />
